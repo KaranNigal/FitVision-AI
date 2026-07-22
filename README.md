@@ -106,7 +106,7 @@ sequenceDiagram
 erDiagram
     USERS {
         int id PK
-        string email UK
+        string email "UK"
         string hashed_password
         string full_name
         string profile_pic_url
@@ -140,7 +140,7 @@ erDiagram
     }
     ACHIEVEMENTS {
         int id PK
-        string code UK
+        string code "UK"
         string title
         string description
         int xp_reward
@@ -154,7 +154,7 @@ erDiagram
     }
     LEADERBOARD {
         int id PK
-        int user_id FK UK
+        int user_id FK "UK"
         int total_xp
         int level
         datetime updated_at
